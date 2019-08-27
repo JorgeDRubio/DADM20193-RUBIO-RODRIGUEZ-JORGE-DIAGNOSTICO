@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+            <meta charset="utf-8">
+            <title> Login </title>
+    </head>
+    <body>
+
+        <div>
+            Ingrese el numero: <input type="text" onkeyup= "numero(this.value)">
+            Resultado: <input type="text" id="mostrar">
+        </div>
+
+    </body>
+<script type = "text/javascript">
+
+function numero(str)
+{
+    var x=1;
+    for (var i = 1; i <= parseInt(str); i++){
+        x= x *i;
+
+    }
+
+    document.getElementById("mostrar").value=x;
+}
+
+</script>
+
+</html>
